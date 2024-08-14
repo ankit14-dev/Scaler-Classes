@@ -1,0 +1,36 @@
+grep command in Unix/Linux
+Last Updated : 12 Jul, 2024
+The grep command in Unix/Linux is a powerful tool used for searching and manipulating text patterns within files. Its name is derived from the ed (editor) command g/re/p (globally search for a regular expression and print matching lines), which reflects its core functionality. grep is widely used by programmers, system administrators, and users alike for its efficiency and versatility in handling text data. In this article, we will explore the various aspects of the grep command.
+
+Table of Content
+
+Syntax of grep Command in Unix/Linux
+Options Available in grep Command
+Pratical Example of grep Command in Linux
+1. Case insensitive search
+2. Displaying the Count of Number of Matches Using grep
+3. Display the File Names that Matches the Pattern Using grep
+4. Checking for the Whole Words in a File Using grep
+5. Displaying only the matched pattern Using grep
+6. Show Line Number While Displaying the Output Using grep -n
+7. Inverting the Pattern Match Using grep
+8. Matching the Lines that Start with a String Using grep
+9. Matching the Lines that End with a String Using grep
+10.Specifies expression with -e option
+11. -f file option Takes patterns from file, one per line
+12. Print n Specific Lines from a File Using grep
+13. Search Recursively for a Pattern in the Directory
+Syntax of grep Command in Unix/Linux
+The basic syntax of the `grep` command is as follows:
+
+grep [options] pattern [files]
+
+
+
+Here,
+
+[options]: These are command-line flags that modify the behavior of grep. 
+
+[pattern]: This is the regular expression you want to search for.
+
+[file]: This is the name of the file(s) you want to search within. You can specify multiple files for simultaneous searching.

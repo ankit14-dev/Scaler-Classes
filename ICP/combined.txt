@@ -1,0 +1,8 @@
+
+public class A{
+    public static void main(String args[]){
+        System.out.println("Hello")
+    }
+}total 4
+-rw-rw-r-- 1 ankit-kumar ankit-kumar 104 Aug 12 10:42 A.java
+-rw-rw-r-- 1 ankit-kumar ankit-kumar   0 Aug 12 11:15 output
