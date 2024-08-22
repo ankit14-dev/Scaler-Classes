@@ -3,7 +3,11 @@ import java.util.*;
 class HelloWorld{
 //main function: program execution starts here
 	public static void main(String args[]){
-		System.out.print(100+100+"100"+100+100+100);
+		int a;
+		a=200;
+		a=300;
+		long power=(long)a*a*a*a*a;
+		System.out.println(power);
 	
 	}
 
