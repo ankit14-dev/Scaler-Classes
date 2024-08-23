@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    background-color: #a1c7dd;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    /* display:flex; */
+}
+.left{
+    
+}
+.container{
+    background-color: aqua;
+    margin: 10px 20px ;
+    /* margin-top: 20px; */
+    /* margin-bottom: 30px; */
+    /* margin-left: 40px; */
+    /* margin-right: 40px; */
+    border: 2px dashed black;
+    padding: 50px;
+    height: 200px;
+    width: 1000px;
+}
+p{
+    /* padding: 30px; */
+    fon
+}
+li{
+    lis
+}
