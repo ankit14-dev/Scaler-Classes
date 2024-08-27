@@ -6,8 +6,9 @@ class HelloWorld{
 		int a;
 		a=200;
 		a=300;
-		long power=(long)a*a*a*a*a;
-		System.out.println(power);
+		//long power=(long)a*a*a*a*a;
+		boolean bool;
+		System.out.println(bool);
 	
 	}
 
