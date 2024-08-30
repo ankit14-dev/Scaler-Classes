@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+*{
+    --primary-color:#536aee;
+    --white:#ffffff;
+    --width-card:350px
+}
+body{
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'SUSE',sans-serif;
+}
+.bg-profile{
+    height: 150px;
+    width: var(--width-card);
+    background-color: white;
+}
+.profile-pic{
+    position: relative;
+    top: 30%;
+    object-fit: cover;
+    
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.profile-card{
+    background-color: var(--primary-color);
+    color: #ffffff;
+    height: 600px;
+    width: var(--width-card);
+
+    text-align: center;
+
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.profile-card:hover{
+    transform: scale(1.01);
+}
+img{
+    height: 25px;
+    width: 25px;
+}
