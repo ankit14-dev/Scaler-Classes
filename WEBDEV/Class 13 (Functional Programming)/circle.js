@@ -16,7 +16,7 @@ function calculate(radiusArr,logic){
         Arr.push(logic(radiusArr[i]))
     }
     return Arr;
-}
+}//higher order funtion
 
 console.log(calculate(arrRadius,calculateArea))
 console.log(calculate(arrRadius,calculateCircumference))
