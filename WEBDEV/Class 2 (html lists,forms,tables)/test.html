@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form with Radio and Checkbox</title>
+</head>
+<body>
+
+<h1>Contact Us</h1>
+<form action="/submit" method="post">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <label>Preferred Contact Method:</label><br>
+    <input type="radio" id="phone" name="contact_method" value="phone">
+    <label for="phone">Phone</label><br>
+    <input type="radio" id="email_contact" name="contact_method" value="email" checked>
+    <label for="email_contact">Email</label><br><br>
+    
+    <label>Interests:</label><br>
+    <input type="checkbox" id="news" name="interests" value="news">
+    <label for="news">Newsletter</label><br>
+    <input type="checkbox" id="updates" name="interests" value="updates">
+    <label for="updates">Product Updates</label><br>
+    <input type="checkbox" id="offers" name="interests" value="offers">
+    <label for="offers">Special Offers</label><br><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" required></textarea><br><br>
+    
+    <input type="submit" value="Send">
+</form>
+
+</body>
+</html>
