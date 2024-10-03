@@ -10,10 +10,10 @@ function calculatediameter(radius){
 function calculateCircumference(radius){
     return 2*3.14*radius    
 }
-function calculate(radiusArr,logic){
+function calculate(radiusArr,cb){
     let Arr=[]
     for(let i=0;i<radiusArr.length;i++){
-        Arr.push(logic(radiusArr[i]))
+        Arr.push(cb(radiusArr[i]))
     }
     return Arr;
 }//higher order funtion
@@ -21,3 +21,8 @@ function calculate(radiusArr,logic){
 console.log(calculate(arrRadius,calculateArea))
 console.log(calculate(arrRadius,calculateCircumference))
 console.log(calculate(arrRadius,calculatediameter))
+
+
+// git remote add origin https://github.com/ankit14-dev/mrinal-sir.git
+// git branch -M main
+// git push -u origin main
