@@ -26,3 +26,5 @@ console.log(cap);
 
 //Bracket Notation -HW
 console.log(cap["firstName"]);
+console.log(Object.keys(cap));
+console.log(Object.values());
