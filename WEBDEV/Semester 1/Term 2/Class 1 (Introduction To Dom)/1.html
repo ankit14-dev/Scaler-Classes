@@ -11,13 +11,20 @@
 
     <script>
       // On click of a button add hello
-      let btn = document.querySelector("#btn-1");
-      btn.addEventListener("click", function () {
-        let newDiv=document.createElement('div')
-        newDiv.innerText="Hello";
-        let textDiv=document.querySelector('#textDiv');
-        textDiv.appendChild(newDiv);
+      //Query Selector
+      let btn=document.querySelector('#btn-1');
+      //Get Element by Id Selecter
+      // document.getElementById()
+
+      //Get element by class Name
+      // document.getElementsByClassName()
+      btn.addEventListener('click',function(){
+        let pElement=document.createElement('p');
+        pElement.innerText='hello';
+        let body=document.querySelector('body');
+        body.append(pElement);
       });
+      
     </script>
 </body>
 </html>

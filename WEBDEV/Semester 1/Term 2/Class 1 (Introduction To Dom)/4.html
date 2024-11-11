@@ -61,9 +61,16 @@
       // Also changes the data-color attribute to "used"
       var card=document.querySelectorAll('.card');
       for(var i=0;i<card.length;i++){
-        card[i].addEventListener('dblclick',function(){
-          const color=card[i].getAttribute('data-color')
-          card[i].color=color;
+        card[i].addEventListener('dblclick',function(e){
+          console.log(e)
+          console.log(card[i])
+          const color=e.target.getAttribute('data-color');
+          // const color=e.currentTarget.getAttribute('data-color')
+          console.log(color);
+          e.target.classList.add(color);
+          e.target.setAttribute('data-color','used')
+          // e.currentTarget.classList.add(color);
+          // e.currentTarget.setAttribute('data-color','used');
         })        
       }
 
