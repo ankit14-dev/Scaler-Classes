@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Down New Year</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to right, #141e30, #243b55);
+            color: #ffffff;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #ffcc00;
+            text-shadow: 2px 2px 8px #000000;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            color: #ffffffcc;
+        }
+
+        h2#countdown {
+            font-size: 4rem;
+            background-color: #ffcc00;
+            color: #141e30;
+            padding: 20px 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out;
+        }
+
+        h2#countdown:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1>New Year Countdown</h1>
+        <p>Time left until New Year</p>
+
+        <h2 id="countdown">00:00:00:00</h2>
+    </div>
+    <script>
+        const deadline=new Date("2025-1-01")
+        function timer(){
+            var countdown=document.getElementById('countdown');
+            let now=new Date()
+            let diff=deadline-now;
+            let days=Math.floor(diff/(1000*60*60*24))
+            let hour=Math.floor((diff%(1000*60*60*24))/(1000*60*60))
+            let minute=Math.floor((diff%(1000*60*60))/(1000*60))
+            let sec=Math.floor((diff%(1000*60))/1000)
+            
+
+            countdown.innerText=`${days}:${hour}:${minute}:${sec}`;
+
+        }
+        setInterval(timer,1000)
+    </script>
+
+</body>
+</html>

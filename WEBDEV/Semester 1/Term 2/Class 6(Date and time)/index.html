@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var date = new Date(); //current date and time
+        // document.write(date);
+        const specificDate = new Date('2020-12-25T13:53:59');
+        // document.write('<br>' + specificDate);
+        
+
+        //custom date
+        const customDate = new Date(2020, 11, 25, 13, 53, 59);
+        document.write('<br>' + customDate);
+        /* document.write('<br>' + "customDate.toISOString() -> "+customDate.toISOString());
+
+        document.write('<br>' +"customDate.getFullYear()" +customDate.getFullYear());
+        document.write('<br>' +"customDate.getMonth()" +customDate.getMonth());
+        document.write('<br>' +"customDate.getDate()" +customDate.getDate());
+        document.write('<br>' +"customDate.getDay()" +customDate.getDay());
+        document.write('<br>' +"customDate.getHours()" +customDate.getHours());
+        document.write('<br>' +"customDate.getMinutes()" +customDate.getMinutes());
+        document.write('<br>' +"customDate.getSeconds()" +customDate.getSeconds());
+        document.write('<br>' +"customDate.getMilliseconds()" +customDate.getMilliseconds());
+        document.write('<br>' +"customDate.getTime()" +customDate.getTime());
+        document.write('<br>' +"customDate.getTimezoneOffset()" +customDate.getTimezoneOffset());
+        document.write('<br>' +"customDate.getUTCDate()" +customDate.getUTCDate());
+        document.write('<br>' +"customDate.getUTCDay()" +customDate.getUTCDay());
+        document.write('<br>' +"customDate.getUTCFullYear()" +customDate.getUTCFullYear());
+        document.write('<br>' +"customDate.getUTCHours()" +customDate.getUTCHours());
+        document.write('<br>' +"customDate.getUTCMilliseconds()" +customDate.getUTCMilliseconds());
+        document.write('<br>' +"customDate.getUTCMinutes()" +customDate.getUTCMinutes());
+        document.write('<br>' +"customDate.getUTCMonth()" +customDate.getUTCMonth());
+        document.write('<br>' +"customDate.getUTCSeconds()" +customDate.getUTCSeconds());
+        document.write('<br>' +"customDate.getYear()" +customDate.getYear());
+        document.write('<br>' +"customDate.toDateString()" +customDate.toDateString());
+        document.write('<br>' +"customDate.toISOString()" +customDate.toISOString());
+        document.write('<br>' +"customDate.toJSON()" +customDate.toJSON());
+        document.write('<br>' +"customDate.toLocaleDateString()" +customDate.toLocaleDateString());
+        document.write('<br>' +"customDate.toLocaleTimeString()" +customDate.toLocaleTimeString());
+        document.write('<br>' +"customDate.toLocaleString()" +customDate.toLocaleString());
+        document.write('<br>' +"customDate.toString()" +customDate.toString());
+        document.write('<br>' +"customDate.toTimeString()" +customDate.toTimeString());
+        document.write('<br>' +"customDate.toUTCString()" +customDate.toUTCString());
+        document.write('<br>' +"customDate.valueOf()" +customDate.valueOf()); */
+
+        let date1 = new Date("2024-11-01");
+        let date2 = new Date("2024-11-10");
+        let diff = date2 - date1;
+        let days = diff / (1000 * 60 * 60 * 24);
+        document.write('<br>' + days);
+
+        //calculate the time left for christmas
+        let christmasDate=new Date(2024,11,25);
+        let now=new Date()
+        const diffChrist=christmasDate-now;
+        document.write("<br>"+diffChrist)
+        
+        
+
+    </script>
+</body>
+</html>

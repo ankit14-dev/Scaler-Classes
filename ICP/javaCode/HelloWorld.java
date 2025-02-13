@@ -7,7 +7,7 @@ class HelloWorld{
 		a=200;
 		a=300;
 		//long power=(long)a*a*a*a*a;
-		boolean bool;
+		boolean bool=true;
 		System.out.println(bool);
 	
 	}

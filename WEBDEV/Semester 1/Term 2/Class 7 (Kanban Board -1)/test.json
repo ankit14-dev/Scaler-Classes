@@ -1,0 +1,32 @@
+[
+  {
+    "movieName": "The Dark Knight",
+    "releaseYear": 2008,
+    "previousMovie": {
+      "movieName": "Batman Begins",
+      "releaseYear": 2005
+    },
+    "nextMovie": {
+      "movieName": "The Dark Knight Rises",
+      "releaseYear": 2012
+    },
+    "cast": [
+      {
+        "name": "Christian Bale",
+        "role": "Bruce Wayne / Batman"
+      },
+      {
+        "name": "Heath Ledger",
+        "role": "Joker"
+      },
+      {
+        "name": "Aaron Eckhart",
+        "role": "Harvey Dent / Two-Face"
+      }
+    ]
+  },
+  {
+    "movieName": "The Prestige",
+    "releaseYear": 2006
+  }
+]
