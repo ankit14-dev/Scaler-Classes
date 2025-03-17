@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+  </head>
+  <body>
+    <style>
+      .heading_1 {
+        color: red;
+      }
+    </style>
+    <div class="root"></div>
+
+    <script>
+
+        let headingElement=React.createElement("h1",{className:"heading_1",style:{backgroundColor:"black",fontSize:"10rem"}}, "Hello form React");
+        console.log(headingElement);
+        ReactDOM.render(headingElement,document.querySelector(".root"));
+
+
+    </script>
+  </body>
+</html>
