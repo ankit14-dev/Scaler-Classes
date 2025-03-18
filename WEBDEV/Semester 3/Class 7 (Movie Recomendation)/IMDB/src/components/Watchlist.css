@@ -1,0 +1,86 @@
+.watchlist-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.watchlist-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #f5c518; /* IMDB yellow color */
+}
+
+.sorting-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+}
+
+.sort-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sort-select {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.sort-order-btn {
+  padding: 8px 16px;
+  background-color: #f5c518;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.movies-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.movie-list-item {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.movie-details {
+  padding: 15px;
+  flex-grow: 1;
+}
+
+.movie-details p {
+  margin: 8px 0;
+  line-height: 1.4;
+}
+
+.empty-watchlist {
+  text-align: center;
+  padding: 40px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  font-size: 18px;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .movie-list-item {
+    flex-direction: column;
+  }
+  
+  .sorting-controls {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
