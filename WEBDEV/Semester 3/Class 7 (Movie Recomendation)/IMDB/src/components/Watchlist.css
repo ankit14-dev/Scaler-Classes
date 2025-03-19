@@ -1,6 +1,9 @@
+:root {
+  --poster-width: 100px;
+}
 .watchlist-container {
   padding: 20px;
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -72,8 +75,144 @@
   border-radius: 8px;
   font-size: 18px;
   color: #555;
+  margin-top: 20px;
 }
 
+.table-responsive {
+  overflow-x: auto;
+}
+
+.watchlist-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.watchlist-table th,
+.watchlist-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.watchlist-table th {
+  background-color: #f5c518;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+}
+
+.sortable-header {
+  cursor: pointer;
+}
+
+.sortable-header:hover {
+  background-color: #e6b800;
+}
+
+.movie-row:hover {
+  background-color: #f9f9f9;
+}
+
+.movie-poster-thumbnail {
+  width: var(--poster-width);
+  border-radius: 4px;
+}
+
+.overview-cell {
+  max-width: 300px;
+}
+
+.overview-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+
+.poster-cell {
+  width: var(--poster-width);
+}
+
+/* Add these styles to your existing CSS file */
+
+.search-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 40px 12px 15px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #f5c518;
+  box-shadow: 0 0 0 2px rgba(245, 197, 24, 0.2);
+}
+
+.clear-search-btn {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #777;
+  font-size: 18px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+
+.clear-search-btn:hover {
+  color: #333;
+}
+
+.no-results {
+  text-align: center;
+  padding: 30px;
+  background-color: #f8f8f8;
+  border-radius: 6px;
+  margin: 20px 0;
+}
+
+.no-results p {
+  margin-bottom: 15px;
+  color: #555;
+  font-size: 18px;
+}
+
+.reset-search-btn {
+  padding: 8px 16px;
+  background-color: #f5c518;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #000;
+}
+
+.reset-search-btn:hover {
+  background-color: #e6b800;
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .movie-list-item {
     flex-direction: column;
@@ -82,5 +221,18 @@
   .sorting-controls {
     flex-direction: column;
     gap: 10px;
+  }
+  
+  .watchlist-table {
+    font-size: 14px;
+  }
+  
+  .watchlist-table th,
+  .watchlist-table td {
+    padding: 8px 10px;
+  }
+  
+  .overview-cell {
+    max-width: 200px;
   }
 }
