@@ -195,7 +195,7 @@ function Watchlist() {
                       <td><b>{movie.title}</b></td>
                       <td>{movie.vote_average} / 10</td>
                       <td>{movie.release_date}</td>
-                      <td>{movie.genre_ids?.map(id => getGenreById[id]).join(', ') || 'N/A'}</td>
+                      <td>{movie.genre_ids?.map(id => getGenreById[ id]).join(', ') || 'N/A'}</td>
                       <td>{movie.popularity?.toFixed(1)}</td>
                       <td className="overview-cell">
                         <div className="overview-text">{movie.overview}</div>

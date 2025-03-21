@@ -1,3 +1,4 @@
+package LRUCache;
 public class CacheTest {
     public static void main(String[] args) {
         LinkedListCache cache = new LinkedListCache(3);

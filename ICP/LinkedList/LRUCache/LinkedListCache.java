@@ -1,3 +1,4 @@
+package LRUCache;
 import java.util.HashMap;
 
 class Node{
